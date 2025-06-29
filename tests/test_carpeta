@@ -1,0 +1,8 @@
+# tests/test_carpeta.py
+import pytest
+from controllers import CarpetaController
+
+def test_agregar_carpeta():
+    ctrl = CarpetaController()
+    ctrl.agregar_carpeta("Test", "C:/Test", "ctrl+alt+t", "Carpeta", ["General"])
+    assert True  # Aquí vendrían asserts específicos
